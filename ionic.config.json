@@ -1,0 +1,7 @@
+{
+  "name": "Tienda-Ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
