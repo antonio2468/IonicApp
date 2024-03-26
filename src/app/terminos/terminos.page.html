@@ -1,0 +1,21 @@
+<app-header backButton="/main/profile" title="Términos y Condiciones"></app-header>
+
+<ion-content class="ion-padding-top ion-text-center terms-content">
+  <ion-card class="terms-card">
+    <ion-card-header>
+      <ion-card-title>Términos y Condiciones de PSorteo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="terms-content">
+      <p>Bienvenido a PSorteo, una compañía dedicada a realizar sorteos de un peso cada tercer día.</p>
+      <p>Por favor, lee atentamente los siguientes términos y condiciones antes de participar en nuestros sorteos.</p>
+      <p>1. Al participar en los sorteos de PSorteo, aceptas cumplir con todas las reglas y condiciones establecidas por la compañía.</p>
+      <p>2. Los sorteos se realizan cada tercer día y el premio consiste en un monto de un peso para el ganador.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Botones para aceptar y rechazar -->
+  <div class="buttons-container">
+    <ion-button color="primary" expand="block" (click)="accept()" class="accept-button">Aceptar</ion-button>
+    <ion-button color="danger" expand="block" (click)="reject()" class="reject-button">Rechazar</ion-button>
+  </div>
+</ion-content>

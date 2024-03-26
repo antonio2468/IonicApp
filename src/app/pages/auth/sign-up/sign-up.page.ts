@@ -51,10 +51,10 @@ export class SignUpPage implements OnInit {
     })
   }
 
-  async setUserInfo(uid:string){
+  async setUserInfo(uid: string){
     const loading = await this.utilsSvc.loading();
     await loading.present();
-    let path = 'users/${uid}';
+    let path = `users/${uid}`;
     delete this.form.value.password;
     this.firebaseSvs.setDocument(path,this.form.value).then(async res => {
       this.utilsSvc.saveInLocalStorage('user', this.form.value);
@@ -74,4 +74,3 @@ export class SignUpPage implements OnInit {
     })
   }
 }
-

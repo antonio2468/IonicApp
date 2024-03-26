@@ -8,7 +8,7 @@ import { UtilsService } from '../services/utils.service';
   providedIn: 'root'
 })
 export class AuthGuard implements CanActivate {
-
+ 
   constructor(private firebaseSvc: FirebaseService, private utilsSvc: UtilsService) {}
 
   canActivate(
@@ -26,10 +26,11 @@ export class AuthGuard implements CanActivate {
             }
           }
           else {
-            this.utilsSvc.routerLink('/auth');
+            this.firebaseSvc.signOut()
             resolve(false);
           }
         });
       });
     }
 }
+

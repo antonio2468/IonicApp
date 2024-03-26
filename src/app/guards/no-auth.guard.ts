@@ -4,12 +4,10 @@ import { Observable } from 'rxjs';
 import { FirebaseService } from '../services/firebase.service';
 import { UtilsService } from '../services/utils.service';
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class NoAuthGuard implements CanActivate {
-
   constructor(private firebaseSvc: FirebaseService, private utilsSvc: UtilsService) {}
 
   canActivate(

@@ -4,19 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ProfilePageRoutingModule } from './profile-routing.module';
+import { TerminosPageRoutingModule } from './terminos-routing.module';
 
-import { ProfilePage } from './profile.page';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { TerminosPage } from './terminos.page';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProfilePageRoutingModule,
+    TerminosPageRoutingModule,
     SharedModule
   ],
-  declarations: [ProfilePage]
+  declarations: [TerminosPage]
 })
-export class ProfilePageModule {}
+export class TerminosPageModule {}

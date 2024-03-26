@@ -1,0 +1,41 @@
+.terms-content {
+    max-width: 500px;
+    margin: auto;
+    
+  }
+  
+  .terms-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .accept-button,
+  .reject-button {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  
+  
+
+
+  ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+  }
+  
+  .terms-card {
+    width: 100%; /* Ancho del ion-card */
+    text-align: center; /* Alinea el texto en el centro */
+  }

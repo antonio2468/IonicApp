@@ -4,7 +4,6 @@ import { FirebaseService } from 'src/app/services/firebase.service';
 import {User} from 'src/app/models/user.model';
 import { UtilsService } from 'src/app/services/utils.service';
 
-
 @Component({
   selector: 'app-forgot-password',
   templateUrl: './forgot-password.page.html',
@@ -12,6 +11,7 @@ import { UtilsService } from 'src/app/services/utils.service';
 })
 export class ForgotPasswordPage implements OnInit {
 
+  
   form = new FormGroup({
     email : new FormControl('',[Validators.required, Validators.email]),
   });
